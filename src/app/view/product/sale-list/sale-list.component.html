@@ -1,0 +1,13 @@
+<div class="sales-grid">
+    <div *ngFor="let sale of salesList" class="sales-card">
+      <img [src]="sale.imageUrl" alt="{{ sale.name }}" class="sales-image" />
+      <div class="sales-info">
+        <h3>{{ sale.name }}</h3>
+        <p>${{ sale.price }}</p>
+        <button (click)="addToCart(sale)">Añadir al carrito</button>
+
+      </div>
+    </div>
+  </div>
+  <app-detail-sale></app-detail-sale>
+  

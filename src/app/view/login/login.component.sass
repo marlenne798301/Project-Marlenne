@@ -1,0 +1,64 @@
+// Variables
+$primary-color: #3f51b5
+$secondary-color: #f50057
+$background-color: #f0f0f0
+$card-width: 400px
+$input-border-color: #cccccc
+$input-focus-color: $primary-color
+$button-color: #3f51b5
+$button-hover-color: #303f9f
+
+.login-container
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100vh
+  padding: 20px
+
+  mat-card
+    width: $card-width
+    padding: 30px
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2)
+    border-radius: 10px
+    background-color: white
+    text-align: center
+
+    mat-card-title
+      margin-bottom: 20px
+      font-size: 1.8em
+      color: $primary-color
+
+    mat-card-content
+      display: flex
+      flex-direction: column
+
+      form
+        display: flex
+        flex-direction: column
+
+        mat-form-field
+          margin-bottom: 20px
+
+          .mat-form-field-appearance-fill .mat-form-field-flex
+            background-color: rgba(0, 0, 0, 0.05)
+            border-radius: 5px
+
+          .mat-form-field-appearance-fill .mat-form-field-outline
+            border-color: $input-border-color
+
+          .mat-form-field-appearance-fill.mat-focused .mat-form-field-outline
+            border-color: $input-focus-color
+
+        button
+          width: 100%
+          padding: 10px
+          color: white
+          background-color: $button-color
+          border: none
+          border-radius: 5px
+          font-size: 1em
+          cursor: pointer
+          transition: background-color 0.3s
+
+          &:hover
+            background-color: $button-hover-color

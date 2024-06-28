@@ -1,0 +1,35 @@
+.sales-grid
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+  gap: 16px
+  padding: 16px
+
+.sales-card
+  border: 1px solid #ccc
+  border-radius: 8px
+  overflow: hidden
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+  transition: transform 0.2s
+
+.sales-card:hover
+  transform: scale(1.05)
+
+.sales-image
+  width: 100%
+  height: auto
+
+.sales-info
+  padding: 16px
+  text-align: center
+
+button
+  background-color: #28a745
+  color: white
+  border: none
+  padding: 10px
+  border-radius: 5px
+  cursor: pointer
+  transition: background-color 0.3s
+
+button:hover
+  background-color: #218838

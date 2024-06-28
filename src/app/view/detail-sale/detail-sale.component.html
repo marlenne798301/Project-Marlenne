@@ -1,0 +1,6 @@
+<p>{{totalSum}}</p>
+
+<div *ngFor="let product of productsDetail">
+  <p>{{product.name}} - {{product.price}}</p>
+  <button (click)="delete(product)">Borrar</button>
+</div>
