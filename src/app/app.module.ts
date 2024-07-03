@@ -27,6 +27,7 @@ import { SalesListComponent } from './view/product/sale-list/sale-list.component
 import { DetailSaleComponent } from './view/detail-sale/detail-sale.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
